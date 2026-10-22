@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Say Briefly — ĐỔI TÊN TRANG</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fcfaf5;--green:#1a3300;--yellow:#ffe95c;--teal:#a8e5e5;--ink:#1a1a1a;--gray:#7a7a72;--line:rgba(26,51,0,.12);--red:#b30000}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle,rgba(26,51,0,.03) 1px,transparent 1px);background-size:20px 20px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 50px}
+.hero{padding:36px 0 18px;border-bottom:3px solid var(--green);margin-bottom:24px}
+.hero .label{font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:2.5px;color:var(--green);margin-bottom:3px}
+.hero h1{font-family:'Bricolage Grotesque',sans-serif;font-size:38px;font-weight:800;letter-spacing:.02em;line-height:1.05;color:var(--green);text-transform:uppercase}
+.hero .sub{font-size:14px;color:var(--gray);margin-top:5px}
+.hero .meta{font-family:'JetBrains Mono',monospace;font-size:8.5px;color:var(--gray);margin-top:6px;text-transform:uppercase;letter-spacing:1.5px}
+.sec{margin-bottom:22px}
+.sec h2{font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:800;letter-spacing:.02em;color:var(--green);padding-bottom:4px;margin-bottom:10px;border-bottom:2px solid var(--yellow);display:inline-block}
+.sec h3{font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:700;color:var(--green);margin:14px 0 6px}
+.sec h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gray);margin:12px 0 4px}
+.sec p{font-size:14px;line-height:1.7;margin-bottom:6px}
+.sec p strong{font-weight:700}
+.sec ul,.sec ol{padding-left:20px;margin:4px 0}
+.sec li{font-size:13.5px;line-height:1.65;margin:3px 0}
+.hl-box{border-left:4px solid var(--green);background:rgba(26,51,0,.04);padding:10px 14px;margin:8px 0;font-size:13px;line-height:1.6}
+.hl-box .hll{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:3px}
+.hl-box.yellow{border-left-color:var(--yellow);background:rgba(255,233,92,.08)}
+.hl-box.yellow .hll{color:#b3a030}
+.hl-box.teal{border-left-color:var(--teal);background:rgba(168,229,229,.1)}
+.hl-box.teal .hll{color:#3a9999}
+.hl-box.red{border-left-color:var(--red);background:rgba(179,0,0,.04)}
+.hl-box.red .hll{color:var(--red)}
+.tw{overflow-x:auto;margin:8px 0;border:1px solid var(--line)}
+.tb{width:100%;border-collapse:collapse;font-size:12px}
+.tb th{background:var(--green);color:var(--cream);font-weight:600;text-align:left;padding:5px 8px;font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+.tb td{padding:5px 8px;border-bottom:1px solid var(--line);font-size:12px;vertical-align:top}
+.tb tr:last-child td{border-bottom:none}
+.tb .fn{font-weight:700}
+.dia{border:2px solid var(--green);padding:14px 16px;margin:10px 0;background:rgba(26,51,0,.02)}
+.dia .dl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:8px}
+.flow{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;padding:6px 0}
+.flow .fn{font-family:'Bricolage Grotesque',sans-serif;font-size:11px;font-weight:700;color:var(--green);background:rgba(26,51,0,.06);padding:6px 10px;border-radius:3px;text-align:center;max-width:155px}
+.flow .fn small{display:block;font-family:'DM Sans',sans-serif;font-size:9px;font-weight:400;color:var(--gray);margin-top:1px}
+.flow .arrow{font-size:16px;color:var(--green);font-weight:700}
+.bar{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12px}
+.bar .bl{width:150px;font-weight:600}
+.bar .bt{flex:1;height:16px;background:rgba(26,51,0,.07);position:relative}
+.bar .bf{height:100%;background:var(--green)}
+.bar .bf.hi{background:var(--red)}
+.bar .bv{font-family:'JetBrains Mono',monospace;font-size:10px;width:60px;text-align:right}
+.badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:600;padding:1px 6px;border-radius:2px}
+.badge-g{background:rgba(26,51,0,.12);color:var(--green)}
+.badge-y{background:rgba(255,233,92,.4);color:#7a6c00}
+.badge-r{background:rgba(179,0,0,.12);color:var(--red)}
+.stat2{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:10px 0}
+@media(max-width:600px){.stat2{grid-template-columns:repeat(2,1fr)}}
+.st{border:2px solid var(--green);padding:12px 8px;text-align:center;background:rgba(26,51,0,.02)}
+.st .sn{font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:800;color:var(--green)}
+.st .sl{font-size:10px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+.footer{border-top:2px solid var(--yellow);padding:14px 0;margin-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;font-family:'JetBrains Mono',monospace;font-size:8.5px;text-transform:uppercase;letter-spacing:1px;color:var(--gray)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="label">Say Briefly · ĐỔI BỐI CẢNH</div>
+  <h1>ĐỔI TIÊU ĐỀ</h1>
+  <div class="sub">ĐỔI MỘT CÂU GIẢI THÍCH</div>
+  <div class="meta">ĐỔI NGUỒN · VD 13 PMID · 4 BẢNG</div>
+</div>
+
+<div class="stat2">
+  <div class="st"><div class="sn">12</div><div class="sl">Hợp chất</div></div>
+  <div class="st"><div class="sn">47</div><div class="sl">Tài liệu</div></div>
+  <div class="st"><div class="sn">8</div><div class="sl">Bảng</div></div>
+  <div class="st"><div class="sn">3</div><div class="sl">Hướng</div></div>
+</div>
+
+<section class="sec">
+<h2>1. Mở đầu</h2>
+<p>Một đoạn ngắn dẫn vào. Giọng trực tiếp, không mở bài rườm rà.</p>
+
+<div class="hl-box yellow"><div class="hll">Điểm cần nói ngay</div>
+Một khối gọi ý, viền vàng. Dùng để nốt kết luận cốt lõi của mục này.</div>
+
+<h3>Phân nhóm phụ</h3>
+<p>Câu thường. <strong>Mạnh</strong> để nhấn, không lạm dụng.</p>
+
+<div class="tw"><table class="tb">
+<tr><th>Cột 1</th><th>Cột 2</th><th>Chỉ số</th></tr>
+<tr><td class="fn">Nhãn</td><td>Mô tả</td><td><span class="badge badge-g">Đạt</span></td></tr>
+<tr><td class="fn">Nhãn</td><td>Mô tả</td><td><span class="badge badge-r">Vấn đề</span></td></tr>
+</table></div>
+</section>
+
+<section class="sec">
+<h2>2. Sơ đồ quy trình</h2>
+<div class="dia"><div class="dl">Nhãn sơ đồ</div>
+<div class="flow">
+<div class="fn">Bước 1<small>ghi chú nhỏ</small></div><div class="arrow">→</div>
+<div class="fn">Bước 2<small>ghi chú nhỏ</small></div><div class="arrow">→</div>
+<div class="fn">Bước 3<small>ghi chú nhỏ</small></div>
+</div>
+</div>
+
+<div class="bar"><span class="bl">Tên chỉ số</span><span class="bt"><span class="bf hi" style="width:80%"></span></span><span class="bv">cao</span></div>
+<div class="bar"><span class="bl">Tên chỉ số</span><span class="bt"><span class="bf" style="width:30%"></span></span><span class="bv">thấp</span></div>
+</section>
+
+<section class="sec">
+<h2>3. Kết</h2>
+<div class="hl-box teal"><div class="hll">Khuyến nghị</div>
+Một khối viền xanh ngọc cho phần hành động đề xuất.</div>
+<div class="hl-box red"><div class="hll">Cảnh báo</div>
+Một khối viền đỏ cho rủi ro cần nói thẳng.</div>
+</section>
+
+<div class="footer">
+<span>Say Briefly — Kiềm Saphia</span>
+<span>2026 · nguồn tóm tắt</span>
+</div>
+
+</div>
+</body>
+</html>

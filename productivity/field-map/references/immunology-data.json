@@ -1,0 +1,520 @@
+{
+  "field": "Miễn dịch học (Immunology)",
+  "root_definition": "Ngành khoa học nghiên cứu hệ thống phòng thủ của cơ thể — phát hiện, nhận diện, và loại bỏ tác nhân gây bệnh (virus, vi khuẩn, ký sinh trùng) cũng như tế bào bất thường (ung thư). Gốc từ Latin 'immunis' = miễn trừ.",
+  "total_specialties": 6,
+  "total_topics": 25,
+  "total_terms": 128,
+  "specialties": [
+    {
+      "id": "innate",
+      "name": "Miễn dịch bẩm sinh",
+      "icon": "🛡️",
+      "color": "#38bdf8",
+      "topic_count": 5,
+      "term_count": 28,
+      "purpose": "Cung cấp phòng thủ tức thì, không đặc hiệu — tuyến đầu chống lại mầm bệnh ngay khi xâm nhập",
+      "basic_concept": "Hệ thống có sẵn từ khi sinh ra, nhận diện các pattern chung của vi sinh vật (PAMP) qua PRR (TLR, NLR, RLR). Hoạt động trong vài phút-giờ, không có memory.",
+      "current_frontier": "Nguyên bào đào tạo (trained immunity / innate memory) — tế bào NK và đại thực bào có thể 'nhớ' và phản ứng mạnh hơn khi gặp lại tác nhân, dù không có tế bào B/T. Cơ chế: epigenetic reprogramming (H3K4me3, H3K27ac).",
+      "challenges": "Làm sao tách biệt trained immunity khỏi adaptive contamination trong thí nghiệm? Cơ chế molecular của 'innate memory' ở plant và mammal có conserved không? Rủi ro autoinflammation khi kích hoạt quá mức.",
+      "subtopics": [
+        {
+          "name": "Hàng rào vật lý & hóa học",
+          "term_count": 6,
+          "overview": "Da (keratin, tight junction), niêm mạc (mucus, cilia), pH dạ dày, enzyme lysozyme, defensin, cathelicidin — lớp bảo vệ đầu tiên ngăn mầm bệnh xâm nhập.",
+          "current_research": "Antimicrobial peptides (AMP) tổng hợp thế hệ mới kháng biofilm; engineered mucus barriers cho drug delivery qua đường uống.",
+          "challenges": "Kháng AMP ở vi khuẩn — cơ chế chưa hiểu rõ; tái tạo hàng rào niêm mạc nhân tạo cho ghép tạng."
+        },
+        {
+          "name": "Đại thực bào (Macrophage)",
+          "term_count": 7,
+          "overview": "Thực bào, trình diện kháng nguyên, tiết cytokine (IL-1, IL-6, TNF-α). Hai phenotype: M1 (pro-inflammatory) và M2 (anti-inflammatory/tissue repair).",
+          "current_research": "Single-cell mapping of macrophage heterogeneity trong từng tissue (Kupffer cell, microglia, alveolar macrophage). Metabolic reprogramming (immunometabolism) điều khiển M1/M2 switch.",
+          "challenges": "Liệu M1/M2 dichotomy có quá đơn giản? In vivo macrophage polarization khó kiểm soát — therapeutic targeting thất bại trong clinical trial. Tissue-resident vs monocyte-derived: chức năng khác nhau thế nào?",
+          "cross_links": [
+            {
+              "target": "Immunometabolism",
+              "type": "internal"
+            },
+            {
+              "target": "Immuno-oncology (TME)",
+              "type": "internal"
+            }
+          ]
+        },
+        {
+          "name": "Bạch cầu trung tính (Neutrophil)",
+          "term_count": 5,
+          "overview": "Tế bào nhiều nhất trong máu — phagocytosis, degranulation, NETosis (NET = neutrophil extracellular trap). Tuyến đầu chống vi khuẩn, đặc biệt là extracellular bacteria.",
+          "current_research": "NETosis trong bệnh tự miễn (lupus, RA) và COVID-19 cytokine storm. Neutrophil heterogeneity — có subset chuyên biệt như N1/N2 tương tự M1/M2?",
+          "challenges": "NETs gây viêm mạch và tổn thương mô — làm sao ức chế chọn lọc mà không phá hủy chức năng diệt khuẩn? Neutrophil khó nghiên cứu vì short lifespan và khó transfect."
+        },
+        {
+          "name": "Tế bào NK & Dendritic (DC)",
+          "term_count": 6,
+          "overview": "NK: diệt tế bào thiếu MHC-I (virus, tumor). DC: cầu nối bẩm sinh → thích ứng — capture antigen, migrate đến hạch, trình diện qua MHC-II cho T cell.",
+          "current_research": "NK cell memory (trained immunity). DC vaccines (sipuleucel-T cho prostate cancer). Cross-presentation pathways — DC đưa exogenous antigen lên MHC-I để kích hoạt CD8+ T cell.",
+          "challenges": "NK therapy khó expand và maintain in vivo. DC vaccines hiệu quả thấp — chưa tối ưu được maturation và migration. Cross-presentation mechanism chưa được hiểu đầy đủ.",
+          "cross_links": [
+            {
+              "target": "Liệu pháp tế bào",
+              "type": "internal"
+            },
+            {
+              "target": "Immune Checkpoint",
+              "type": "internal"
+            }
+          ]
+        },
+        {
+          "name": "Hệ thống bổ thể (Complement)",
+          "term_count": 4,
+          "overview": "Ba pathway: classical (C1 → kháng thể), alternative (tự hoạt hóa trên bề mặt vi khuẩn), lectin (MBL). Chung cuộc: C3 convertase → C5 convertase → MAC (membrane attack complex).",
+          "current_research": "Complement trong neurodegeneration (Alzheimer, Parkinson). Intracellular complement (complosome) — C3 và C5 hoạt động bên trong tế bào, điều hòa T cell metabolism.",
+          "challenges": "C3/C5 inhibitors (eculizumab) cực kỳ đắt và tăng nguy cơ nhiễm Neisseria. Complosome: còn quá mới, chưa có công cụ nghiên cứu tốt.",
+          "cross_links": [
+            {
+              "target": "Sinh học cấu trúc (Hóa)",
+              "type": "external"
+            },
+            {
+              "target": "Neuroimmunology",
+              "type": "internal"
+            }
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "PAMP",
+          "basic": "Pattern phân tử chung của vi khuẩn/virus — như \"thẻ bài\" nhận diện kẻ xâm lược.",
+          "intermediate": "Pathogen-Associated Molecular Pattern — molecular motif conserved (LPS, peptidoglycan, flagellin, dsRNA, CpG DNA) không có ở mammalian cells.",
+          "deep": "Cấu trúc molecular cụ thể của LPS (lipid A + core + O-antigen), peptidoglycan (muramyl dipeptide), flagellin monomer. Mỗi PAMP được 1-2 PRR đặc hiệu nhận diện qua structural motif."
+        },
+        {
+          "term": "Inflammasome",
+          "basic": "Cấu trúc protein trong tế bào kích hoạt viêm — \"công tắc\" gây sốt.",
+          "intermediate": "Multiprotein complex: sensor (NLRP3, NLRC4, AIM2) + adaptor ASC + caspase-1. Active: cleaves pro-IL-1β/pro-IL-18, gasdermin D → pyroptosis.",
+          "deep": "NLRP3: hai-step (priming NF-κB + activation K+ efflux/ROS). Non-canonical: caspase-11/4/5 nhận diện cytoplasmic LPS. Role trong gout, Alzheimer, diabetes (islet amyloid)."
+        }
+      ],
+      "cross_links": [
+        {
+          "target": "Thích ứng (DC→T)",
+          "type": "internal"
+        },
+        {
+          "target": "Sinh học tế bào",
+          "type": "external"
+        }
+      ]
+    },
+    {
+      "id": "adaptive",
+      "name": "Miễn dịch thích ứng",
+      "icon": "🎯",
+      "color": "#818cf8",
+      "topic_count": 4,
+      "term_count": 32,
+      "purpose": "Cung cấp phòng thủ đặc hiệu, có memory — nhận diện từng kháng nguyên riêng lẻ và ghi nhớ để phản ứng nhanh hơn ở lần sau",
+      "basic_concept": "Tế bào B (humoral) và T cell (cell-mediated) với thụ thể đặc hiệu từng antigen qua V(D)J recombination. Central tolerance (thymus/bone marrow) loại bỏ self-reactive clone. Memory response sau primary exposure.",
+      "current_frontier": "T follicular helper (Tfh) cell biology — điều khiển germinal center reaction, affinity maturation. Tissue-resident memory T cell (Trm) — phát hiện ra chúng tồn tại lâu dài trong mô, không chỉ tuần hoàn máu.",
+      "challenges": "Làm sao thiết kế vaccine tạo được Trm mạnh ở mucosal site (lung, gut)? Tại sao immune memory kéo dài hàng chục năm với một số vaccine (smallpox) nhưng ngắn với vaccine khác (COVID)? Cơ chế exhaustion trong chronic infection & cancer.",
+      "subtopics": [
+        {
+          "name": "Miễn dịch dịch thể (Humoral)",
+          "term_count": 9,
+          "overview": "B cell → plasma cell → kháng thể. Năm isotype: IgG (chính, qua nhau), IgA (mucosal), IgM (primary response), IgE (dị ứng, ký sinh trùng), IgD (chưa rõ). Affinity maturation trong germinal center.",
+          "current_research": "Broadly neutralizing antibodies (bNAbs) cho HIV và influenza. Germinal center dynamics — live imaging của Tfh-B cell interaction. Memory B cell subsets: class-switched vs unswitched.",
+          "challenges": "Khó tạo bNAb bằng vaccine thông thường (HIV Env quá biến đổi). Long-lived plasma cell niche trong tủy xương chưa hiểu rõ để duy trì vaccine response.",
+          "cross_links": [
+            {
+              "target": "Vaccine (Lâm sàng)",
+              "type": "internal"
+            },
+            {
+              "target": "mAb Therapy",
+              "type": "internal"
+            }
+          ]
+        },
+        {
+          "name": "Miễn dịch tế bào (Cell-mediated)",
+          "term_count": 10,
+          "overview": "CD4+ Th: Th1 (intracellular bacteria), Th2 (parasite), Th17 (extracellular bacteria/fungi), Tfh (B cell help), Treg (suppression). CD8+ CTL: diệt tế bào nhiễm qua perforin/granzyme. MHC-I/II trình diện antigen.",
+          "current_research": "T cell exhaustion và PD-1/CTLA-4 checkpoint. Dysfunctional T cell trong chronic infection: progenitor exhausted → terminally exhausted. Tex progenitor vẫn giữ khả năng proliferate — target cho immunotherapy.",
+          "challenges": "Làm sao ngăn T cell exhaustion mà không gây autoimmunity? Tại sao CD8+ T cell không clear được solid tumor? Treg stability trong môi trường viêm — FoxP3 có thể bị mất?",
+          "cross_links": [
+            {
+              "target": "Immuno-oncology",
+              "type": "internal"
+            },
+            {
+              "target": "Autoimmunity",
+              "type": "internal"
+            }
+          ]
+        },
+        {
+          "name": "Memory & Tolerance",
+          "term_count": 7,
+          "overview": "Central tolerance: negative selection trong thymus (AIRE điều khiển tissue-specific antigen). Peripheral tolerance: Treg, anergy, ignorance, immune privilege. Memory: effector memory (Tem), central memory (Tcm), tissue-resident (Trm).",
+          "current_research": "Trm maintenance — có cần antigen persistent không? Metabolic requirement của memory vs effector T cells (FAO vs glycolysis). Neonatal tolerance vs adult tolerance.",
+          "challenges": "AIRE mutation gây APECED — còn nhiều tissue-specific antigen chưa biết. Làm sao phá vỡ tolerance trong tumor mà không gây autoimmunity toàn thân?"
+        },
+        {
+          "name": "Cơ quan lympho",
+          "term_count": 6,
+          "overview": "Trung tâm: tủy xương (B cell maturation), tuyến ức (T cell selection). Ngoại vi: hạch (T/B cell zone), lách (máu), MALT (mucosa), GALT (gut), SALT (skin). Tertiary lymphoid structure hình thành tại chỗ viêm.",
+          "current_research": "Lymph node stromal cell — không chỉ là cấu trúc mà còn điều hòa miễn dịch. Tertiary lymphoid structures (TLS) trong tumor — biomarker tốt cho immunotherapy response.",
+          "challenges": "Làm sao tái tạo thymus ở người già (thymic involution)? TLS hình thành trong tumor có lợi hay hại? Có thể engineer lymph node ex vivo?"
+        }
+      ],
+      "terms": [
+        {
+          "term": "V(D)J Recombination",
+          "basic": "Cơ chế trộn gene tạo hàng tỷ thụ thể B/T — mỗi tế bào một thụ thể riêng.",
+          "intermediate": "V, D, J segments được RAG1/2 recombinase cắt nối ngẫu nhiên, tạo millions-billions unique receptor sequences.",
+          "deep": "12/23 rule: RSS spacer 12bp/23bp bắt buộc pair. P/N-addition (TdT) tạo junctional diversity. Allelic exclusion: mỗi tế bào chỉ 1 functional chain. Bệnh: SCID do RAG1/2 mutation."
+        },
+        {
+          "term": "Immune Checkpoint",
+          "basic": "Phanh hệ miễn dịch — ngăn T cell tấn công quá mức.",
+          "intermediate": "PD-1, CTLA-4 là inhibitory receptor. Checkpoint inhibitor (anti-PD-1) \"thắng phanh\" → T cell tấn công tumor.",
+          "deep": "CTLA-4 trans-endocytosis CD80/86 khỏi APC. PD-1/SHP2 dephosphorylate TCR signal. Exhaustion: PD-1↑, mất function (IL-2→TNF→IFN-γ→proliferation). Biomarker: PD-L1, TMB, MSI."
+        },
+        {
+          "term": "Germinal Center",
+          "basic": "\"Lò luyện\" kháng thể trong hạch — nơi B cell hoàn thiện vũ khí.",
+          "intermediate": "Dark zone: B proliferation + SHM. Light zone: Tfh selection + affinity maturation. Output: plasma cell + memory B cell.",
+          "deep": "AID → C→U deamination, mutation rate 10^6x cao hơn. Tfh chọn B cell affinity cao nhất. FDC trình bày immune complex. CXCL12/CXCR4 dark zone, CXCL13/CXCR5 light zone."
+        }
+      ]
+    },
+    {
+      "id": "disease",
+      "name": "Cơ chế bệnh — Khi miễn dịch sai",
+      "icon": "⚠️",
+      "color": "#fbbf24",
+      "topic_count": 4,
+      "term_count": 25,
+      "purpose": "Hiểu khi hệ miễn dịch hoạt động sai: tấn công chính mình (tự miễn), phản ứng quá mức (dị ứng), hoặc không đủ mạnh (suy giảm miễn dịch)",
+      "basic_concept": "Breakdown của self-tolerance → tự miễn. IgE-mediated hypersensitivity → dị ứng. Loss of immune cell or function → immunodeficiency. Tumor immune evasion → cancer.",
+      "current_frontier": "Checkpoint immunotherapy (anti-PD-1/PD-L1) đã thay đổi oncology. Autoimmune cytopenia và cytokine storm trong COVID-19. JAK inhibitors cho tự miễn. HIV cure research với broadly neutralizing Ab + latency reversal.",
+      "challenges": "Tại sao chỉ một số patient respond với checkpoint inhibitor? Biomarker dự đoán response? Làm sao điều trị tự miễn mà không ức chế toàn bộ hệ miễn dịch? HIV reservoir không thể xóa sạch hoàn toàn.",
+      "subtopics": [
+        {
+          "name": "Tự miễn (Autoimmunity)",
+          "term_count": 8,
+          "overview": "Mất self-tolerance. Organ-specific: Type 1 DM, Hashimoto, MS. Systemic: Lupus (SLE), Rheumatoid Arthritis. Genetic (HLA-DR/DQ) + environmental trigger (infection, microbiome, molecular mimicry).",
+          "current_research": "Why women >> men (X chromosome, estrogen). Gut microbiome → autoimmunity (molecular mimicry với commensal). JAK inhibitors (tofacitinib, baricitinib) — thay đổi điều trị RA và nhiều bệnh tự miễn. CAR-Treg therapy.",
+          "challenges": "Chưa có cure cho bất kỳ bệnh tự miễn nào. Biomarker để dự đoán flare. Tại sao bệnh tự miễn đang gia tăng ở nước phát triển (hygiene hypothesis)?"
+        },
+        {
+          "name": "Dị ứng & Quá mẫn",
+          "term_count": 7,
+          "overview": "Gell-Coombs: Type I (IgE → mast cell → histamine: sốc phản vệ, hen suyễn), II (IgG → tế bào: ITP, AIHA), III (immune complex deposition: SLE, serum sickness), IV (T cell mediated: contact dermatitis, TB).",
+          "current_research": "Biologics cho dị ứng: anti-IgE (omalizumab), anti-IL5 (mepolizumab). Oral immunotherapy (OIT) cho food allergy. Type 2 immunity và ILC2 — hiểu sâu hơn về allergic cascade.",
+          "challenges": "Dị ứng thực phẩm gia tăng nhanh — nguyên nhân chưa rõ. OIT hiệu quả nhưng nguy cơ anaphylaxis cao. Tại sao một số người hết dị ứng tự nhiên?"
+        },
+        {
+          "name": "Suy giảm miễn dịch",
+          "term_count": 5,
+          "overview": "Bẩm sinh: SCID (ADA deficiency, IL2RG), CGD (NADPH oxidase), DiGeorge (22q11.2 deletion), CVID. Mắc phải: HIV/AIDS (CD4+ depletion), chemotherapy-induced, protein malnutrition.",
+          "current_research": "Gene therapy cho SCID (Strimvelis, Zynteglo). HIV-1 cure: shock-and-kill, block-and-lock, CAR-T chống HIV. Long-acting ART (cabotegravir/rilpivirine).",
+          "challenges": "Gene therapy giá >$1M. HIV vaccine vẫn thất bại — Env protein không ổn định. HIV latency không thể xóa sạch."
+        },
+        {
+          "name": "Immuno-oncology",
+          "term_count": 5,
+          "overview": "Tumor microenvironment (TME): hypoxia, lactate, Treg, MDSC — ức chế T cell. Immune checkpoint: PD-1/PD-L1, CTLA-4. CAR-T cell therapy. Cancer-immunity cycle (Chen & Mellman).",
+          "current_research": "CAR-T cho solid tumor — new design (armored CAR, logic gate, allogeneic). Neoantigen vaccine cá nhân hóa. Bispecific T cell engager (BiTE). Myeloid checkpoint (CD47/SIRPα).",
+          "challenges": "CAR-T tỷ lệ CR >80% trong B-ALL nhưng không hiệu quả với solid tumor (TME ức chế, antigen heterogeneity). Cytokine release syndrome (CRS) và neurotoxicity. Chi phí >$400K."
+        }
+      ],
+      "terms": [
+        {
+          "term": "Autoantibody",
+          "basic": "Kháng thể tấn công nhầm cơ thể thay vì vi trùng.",
+          "intermediate": "ANA (SLE), anti-CCP (RA), anti-TPO (Hashimoto). Vừa là diagnostic biomarker vừa là pathogenic driver.",
+          "deep": "Anti-AChR (Myasthenia) block neuromuscular. Anti-desmoglein (Pemphigus) gây blistering. Cơ chế: complement, ADCC, receptor blockade, immune complex deposition."
+        },
+        {
+          "term": "Cytokine Storm (CRS)",
+          "basic": "\"Bão\" viêm — hệ miễn dịch phản ứng quá mức gây nguy hiểm.",
+          "intermediate": "IL-6, TNF-α, IL-1 tăng vọt → sốt, hypotension, suy đa tạng. Gặp trong: severe COVID, CAR-T therapy, HLH.",
+          "deep": "CAR-T CRS: CAR-T → macrophage IL-6/IL-1 → endothelial activation. Grading 1-4. Tocilizumab (anti-IL-6R), corticosteroids. ICANS neurotoxicity riêng biệt."
+        }
+      ],
+      "cross_links": [
+        {
+          "target": "Thích ứng (T exhaustion)",
+          "type": "internal"
+        },
+        {
+          "target": "Di truyền (HLA)",
+          "type": "external"
+        }
+      ]
+    },
+    {
+      "id": "clinical",
+      "name": "Ứng dụng lâm sàng",
+      "icon": "💉",
+      "color": "#34d399",
+      "topic_count": 5,
+      "term_count": 22,
+      "purpose": "Chuyển kiến thức miễn dịch cơ bản thành công cụ chẩn đoán, điều trị, và phòng ngừa bệnh",
+      "basic_concept": "Vaccine kích thích miễn dịch phòng bệnh. Kháng thể đơn dòng trung hòa tác nhân. Liệu pháp tế bào tái lập trình miễn dịch chống ung thư. Chẩn đoán dùng kháng thể phát hiện kháng nguyên.",
+      "current_frontier": "mRNA vaccine (COVID-19) đã chứng minh platform. mRNA-4157 (Merck) cho cancer vaccine — kết hợp với pembrolizumab, giảm relapse 65% ở melanoma. Nanoparticle delivery cho vaccine và immunotherapy.",
+      "challenges": "Vaccine cho HIV, TB, malaria vẫn chưa có. Lipid nanoparticle (LNP) side effects (myocarditis ở mRNA vaccine). Cần cold chain cho mRNA vaccine (khó cho developing countries).",
+      "subtopics": [
+        {
+          "name": "Vaccine",
+          "term_count": 6,
+          "overview": "Platforms: live attenuated, inactivated, subunit, virus-like particle, viral vector, mRNA, DNA. Adjuvant: Alum, MF59, AS04, AS01, CpG. Route: IM, SC, oral, nasal. Herd immunity threshold.",
+          "current_research": "Self-amplifying RNA vaccine (saRNA) — liều thấp hơn 10x. Pan-coronavirus vaccine targeting conserved S2 domain. Needle-free patch (microneedle). Universal influenza vaccine (HA stalk + NA).",
+          "challenges": "Hesitancy to vaccine. Tại sao BCG cho TB chỉ hiệu quả 0-80%? Universal flu vaccine chưa thành công sau 20 năm.",
+          "cross_links": [
+            {
+              "target": "Sinh học phân tử (mRNA)",
+              "type": "external"
+            },
+            {
+              "target": "Dịch tễ học",
+              "type": "external"
+            }
+          ]
+        },
+        {
+          "name": "Kháng thể đơn dòng (mAb)",
+          "term_count": 5,
+          "overview": "Hybridoma (1975) → chimeric → humanized → fully human (transgenic mouse, phage display). ADC (antibody-drug conjugate). Bispecific T cell engager (BiTE). Fc engineering để tăng ADCC, half-life.",
+          "current_research": "Multispecific antibody (tri-specific HIV). Antibody cocktail (REGN-COV2). Subcutaneous formulation (ENHANZE). AI-driven antibody design (AbDiffusion, ProteinMPNN).",
+          "challenges": "Chi phí sản xuất cao ($100K+/patient/năm). Immunogenicity (ADA). Không oral được. Tissue penetration hạn chế cho solid tumor."
+        },
+        {
+          "name": "Liệu pháp tế bào",
+          "term_count": 5,
+          "overview": "CAR-T (CD19: Kymriah, Yescarta; BCMA: Carvykti). TCR-T. TIL therapy. NK cell therapy (CAR-NK). Off-the-shelf allogeneic CAR-T (CRISPR-edited để tránh GVHD).",
+          "current_research": "Next-gen CAR: logic-gated (AND, OR, NOT gate), armored (IL-12 secreting), switchable (on/off). iPSC-derived CAR-NK — sản xuất hàng loạt. In vivo CAR generation (LNP-CAR mRNA).",
+          "challenges": "CRS/ICANS management. Solid tumor barrier. Antigen escape (CD19-neg relapse). Cost và manufacturing complexity.",
+          "cross_links": [
+            {
+              "target": "Immuno-oncology",
+              "type": "internal"
+            },
+            {
+              "target": "Autoimmunity (Treg)",
+              "type": "internal"
+            }
+          ]
+        },
+        {
+          "name": "Chẩn đoán miễn dịch",
+          "term_count": 4,
+          "overview": "ELISA (sandwich, competitive, indirect). ELISPOT. Western blot. Lateral flow (test nhanh). Flow cytometry/FACS. Luminex (multiplex). Immunohistochemistry (IHC).",
+          "current_research": "Single-cell proteomics (CyTOF, CITE-seq). Spatial proteomics (CODEX, PhenoCycler). Digital ELISA (Simoa) — sensitivity attomolar. Lab-on-a-chip point-of-care.",
+          "challenges": "Multiplex >40 marker: khó phân tích và chuẩn hóa. Point-of-care vẫn chưa đạt sensitivity của lab test. Chi phí instrument cao."
+        },
+        {
+          "name": "Ghép tạng & Immunosuppression",
+          "term_count": 2,
+          "overview": "HLA typing (MHC-I A,B,C; MHC-II DR,DQ,DP). GVHD (graft vs host disease). Immunosuppressant: calcineurin inhibitor (cyclosporine, tacrolimus), mTOR inhibitor (sirolimus), anti-metabolite (MMF), corticosteroid.",
+          "current_research": "Donor-specific antibody (DSA) desensitization. Chimeric antigen receptor Treg (CAR-Treg) để bảo vệ graft. Xenotransplantation (gene-edited pig heart). Tolerance induction (mixed chimerism).",
+          "challenges": "Tolerance induction chưa thành công ở người. Xenotransplant: porcine endogenous retrovirus (PERV) risk. Immunosuppression tăng nguy cơ nhiễm và ung thư."
+        }
+      ],
+      "terms": [
+        {
+          "term": "Adjuvant",
+          "basic": "Chất phụ gia trong vaccine — \"gia vị\" giúp hệ miễn dịch đáp ứng mạnh hơn.",
+          "intermediate": "Alum (depot + NLRP3), MF59 (oil-in-water), AS01 (liposome + MPL + QS21) → strong T cell response.",
+          "deep": "Alum → DAMPs → NLRP3. MF59 → muscle DC recruitment. AS01: MPL (TLR4) + QS21 (CD8+). CpG ODN (TLR9) → Th1. STING agonist cho cancer vaccine. Nanoparticle lymph node targeting."
+        },
+        {
+          "term": "ADC (Antibody-Drug Conjugate)",
+          "basic": "\"Tên lửa dẫn đường\" — kháng thể mang thuốc độc đến ung thư.",
+          "intermediate": "mAb + linker + cytotoxic payload. Internalization → lysosomal release → DNA damage/microtubule inhibition → apoptosis.",
+          "deep": "DAR (drug-to-antibody ratio) ≥4. Linker: cleavable (val-cit) vs non-cleavable (SMCC). Bystander effect. Resistance: MDR1, antigen downregulation, lysosomal dysfunction. Approved: Kadcyla, Enhertu, Adcetris."
+        }
+      ],
+      "cross_links": [
+        {
+          "target": "Cơ chế bệnh (Immuno-oncology)",
+          "type": "internal"
+        },
+        {
+          "target": "Vật lý (Delivery)",
+          "type": "external"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Phương pháp & Công cụ",
+      "icon": "🔬",
+      "color": "#f472b6",
+      "topic_count": 4,
+      "term_count": 15,
+      "purpose": "Cung cấp bộ công cụ để quan sát, đo lường, và thao tác hệ miễn dịch",
+      "basic_concept": "Dùng kháng thể đánh dấu (flow, IHC), đo cytokine (ELISA, multiplex), phân tích tế bào đơn (scRNA-seq, CyTOF), và hình ảnh (confocal, multiphoton).",
+      "current_frontier": "Spatial transcriptomics (Visium, Xenium, MERFISH) — xem gene expression trong context mô. Multi-omics integration. Live imaging của immune cell trong mô (intravital microscopy).",
+      "challenges": "Dữ liệu khổng lồ (single-cell) — bioinformatics bottleneck. Không thể đo tất cả cùng lúc (trade-off giữa số lượng marker và số tế bào). Chi phí vẫn cao.",
+      "subtopics": [
+        {
+          "name": "Protein & Kháng thể",
+          "term_count": 4,
+          "overview": "ELISA (quantitative), Western blot (semi-quantitative), Immunoprecipitation (pull-down), Co-IP (interaction), SPR/BLI (binding kinetics, Kd).",
+          "current_research": "Digital ELISA (Simoa) — single molecule detection. Proximity extension assay (Olink) — 3000+ protein multiplex. Phage/yeast display library cho antibody discovery.",
+          "challenges": "Lot-to-lot variability của commercial antibody. Cross-reactivity. Chỉ detect được protein đã biết trước."
+        },
+        {
+          "name": "Tế bào",
+          "term_count": 5,
+          "overview": "Flow cytometry (10-15 marker), Spectral flow (30-40), CyTOF (40+), scRNA-seq, CITE-seq (protein + RNA), FACS sort.",
+          "current_research": "Multi-omics single-cell (RNA + ATAC + protein cùng tế bào). TotalSeq (oligo-conjugated antibody) cho CITE-seq. Computational integration của nhiều dataset.",
+          "challenges": "Spectral flow: unmixing khó với 40+ marker. CyTOF: tốc độ chậm, sensitivity thấp hơn fluorescence. Chi phí scRNA-seq vẫn $1000+/sample."
+        },
+        {
+          "name": "Hình ảnh",
+          "term_count": 3,
+          "overview": "Immunofluorescence (IF), Confocal, Multiphoton (deep tissue), IHC (DAB), RNAscope (RNA in situ), CODEX/MACSima (40+ marker), Imaging Mass Cytometry (IMC).",
+          "current_research": "Lattice light-sheet microscopy — live 3D imaging của immune cell migration. Expansion microscopy. AI-driven image analysis (Cellpose, DeepCell).",
+          "challenges": "Spatial data analysis chưa có standard pipeline. Antibody multiplex trong tissue khó — cross-reactivity. Tissue autofluorescence."
+        },
+        {
+          "name": "Hệ gen & Omics",
+          "term_count": 3,
+          "overview": "Bulk RNA-seq, scRNA-seq, TCR-seq (CDR3), BCR-seq, ATAC-seq (chromatin accessibility), CUT&Tag (histone modification), Spatial transcriptomics.",
+          "current_research": "Multi-modal integration (RNA + protein + spatial). BEAM/TETR-seq for TCR specificity mapping. Long-read sequencing (PacBio, ONT) cho full-length BCR/TCR.",
+          "challenges": "Data integration: batch effect, different modality, different resolution. Computational cost. Standardization và reproducibility."
+        }
+      ],
+      "terms": [
+        {
+          "term": "Flow Cytometry (FACS)",
+          "basic": "Máy đếm và phân loại tế bào bằng laser — \"máy soát vé\" cho từng tế bào.",
+          "intermediate": "Tế bào + fluorophore-kháng thể → laser beam → đo fluorescence + scatter (size, granularity). Multiparameter: 15-40 marker.",
+          "deep": "Spectral flow: full spectrum + unmixing → 40+ marker. CyTOF: rare earth metal → ICP-MS → 45+ marker, no autofluorescence. FACS sort → >99% purity. CellenONE single-cell cloning."
+        },
+        {
+          "term": "Spatial Transcriptomics",
+          "basic": "Xem gene nào được bật ở đâu trong mô — bản đồ gene trên tissue.",
+          "intermediate": "Histology + RNA-seq giữ nguyên spatial position. Platforms: Visium (100μm), MERFISH (single-cell), GeoMX (ROI).",
+          "deep": "MERFISH: combinatorial barcode + sequential FISH, single-molecule. Xenium: subcellular 0.3μm. Slide-seq 10μm beads. Integration với scRNA-seq qua deconvolution (RCTD, cell2location)."
+        }
+      ],
+      "cross_links": [
+        {
+          "target": "Vật lý (Quang học)",
+          "type": "external"
+        },
+        {
+          "target": "Tin sinh học",
+          "type": "external"
+        }
+      ]
+    },
+    {
+      "id": "cross",
+      "name": "Giao thoa liên ngành",
+      "icon": "🔄",
+      "color": "#a78bfa",
+      "topic_count": 3,
+      "term_count": 6,
+      "purpose": "Nơi miễn dịch học gặp các ngành khác — tạo ra hướng nghiên cứu mới và hiểu sâu hơn về sinh học hệ thống",
+      "basic_concept": "Immunometabolism, Neuroimmunology, Immuno-ecology — miễn dịch không hoạt động đơn lẻ mà tương tác với mọi hệ thống trong cơ thể.",
+      "current_frontier": "Immunometabolism: metabolic checkpoint điều khiển T cell fate. Neuroimmunology: meningeal lymphatic và immune surveillance của não. Gut-brain-immune axis.",
+      "challenges": "Đây là ngành mới — còn nhiều basic mechanism chưa hiểu. Công cụ nghiên cứu interdisciplinary còn hạn chế.",
+      "subtopics": [
+        {
+          "name": "Immunometabolism",
+          "term_count": 2,
+          "overview": "T cell metabolism: glycolysis (effector), FAO (memory). Macrophage: glycolysis (M1), OXPHOS (M2). Metabolic checkpoint: mTOR, AMPK, HIF-1α. Lactate trong TME ức chế T cell.",
+          "current_research": "Glutamine antagonism trong CAR-T — tăng persistence. Methionine restriction → tăng T cell stemness. Metabolic reprogramming as immunotherapy.",
+          "challenges": "Metabolic pathway rất redundant — khó target đơn lẻ. In vivo metabolism khác in vitro hoàn toàn. Tissue-specific metabolism: tumor T cell vs normal T cell khác nhau."
+        },
+        {
+          "name": "Neuroimmunology",
+          "term_count": 2,
+          "overview": "Microglia — macrophage của CNS. Neuroinflammation trong Alzheimer, Parkinson, MS. Meningeal lymphatic — đường thoát dịch não tủy và immune cell khỏi CNS. Cytokine ảnh hưởng đến behavior (sickness behavior).",
+          "current_research": "Microglia: subset khác nhau trong development vs disease. Border-associated macrophages (BAM). Immune checkpoint trong Alzheimer — anti-PD-1 đang thử nghiệm. Gut-brain-immune axis qua vagus nerve.",
+          "challenges": " CNS là immune-privileged nhưng không hoàn toàn — cơ chế chính xác chưa rõ. Microglia rất nhạy với manipulation. Drug delivery qua BBB là barrier lớn."
+        },
+        {
+          "name": "Immuno-ecology & Microbiome",
+          "term_count": 2,
+          "overview": "Gut microbiome điều hòa mucosal và systemic immunity. Short-chain fatty acid (butyrate) → Treg. Segmented filamentous bacteria (SFB) → Th17. Hygiene hypothesis: thiếu exposure → tăng dị ứng/tự miễn.",
+          "current_research": "Fecal microbiota transplant (FMT) cho checkpoint inhibitor non-responder — đang clinical trial. Diet-induced microbiome change ảnh hưởng immunotherapy response. Engineered probiotic cho local cytokine delivery.",
+          "challenges": "Causality hay correlation? Khó chứng minh microbiome gây ra thay đổi miễn dịch, không chỉ đi kèm. Lot-to-lot variability của FMT. Regulation và standardization."
+        }
+      ],
+      "cross_links": [
+        {
+          "target": "Sinh học hệ thống",
+          "type": "external"
+        },
+        {
+          "target": "Hóa sinh (Metabolism)",
+          "type": "external"
+        }
+      ]
+    }
+  ],
+  "external_links": [
+    {
+      "field": "Sinh học phân tử & Di truyền",
+      "topics": [
+        "DNA replication & repair",
+        "CRISPR gene editing",
+        "Epigenetics"
+      ],
+      "relevance": "Nền tảng gene regulation trong immune cells — V(D)J recombination, CSR, cytokine expression."
+    },
+    {
+      "field": "Hóa học (Protein & Drug)",
+      "topics": [
+        "PPI",
+        "Enzyme kinetics",
+        "ADC bioconjugation"
+      ],
+      "relevance": "Thiết kế kinase inhibitor (JAK, BTK), cytokine trap, ADCs. Binding kinetics (Kd) cho therapeutic antibody."
+    },
+    {
+      "field": "Vật lý (Quang học & Cơ học)",
+      "topics": [
+        "Optics & fluorescence",
+        "Mechanobiology",
+        "Fluid dynamics"
+      ],
+      "relevance": "Instrumentation: flow cytometry (laser, optics). T cell activation phụ thuộc force mechanotransduction."
+    },
+    {
+      "field": "Tin sinh học (Bioinformatics)",
+      "topics": [
+        "Single-cell analysis",
+        "TCR repertoire",
+        "Multi-omics integration"
+      ],
+      "relevance": "Bottleneck của immunology hiện tại — data từ scRNA-seq, spatial transcriptomics cần computational methods."
+    },
+    {
+      "field": "Toán học & Mô hình hóa",
+      "topics": [
+        "ODE/PDE models",
+        "Agent-based modeling",
+        "ML cho epitope prediction"
+      ],
+      "relevance": "Model immune dynamics, dự đoán MHC binding, germinal center simulation."
+    },
+    {
+      "field": "Y học lâm sàng & Dịch tễ",
+      "topics": [
+        "Clinical trial design",
+        "Pharmacovigilance",
+        "Vaccine effectiveness"
+      ],
+      "relevance": "Translational endpoint: vaccine efficacy, CRS management, autoimmune safety monitoring."
+    }
+  ]
+}

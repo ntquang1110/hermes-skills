@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Responsive Template</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:#0a0a14;color:#e0e0f0;font-size:15px;line-height:1.6;padding:0 0 30px}
+
+/* ── Header ── */
+hdr{display:block;padding:20px 16px 14px;border-bottom:1px solid #2a2a50;text-align:center}
+hdr h1{font-size:1.25em;font-weight:700;background:linear-gradient(135deg,#7c7cf0,#7cf0a0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+hdr .s{font-size:.72em;color:#9090b0;margin-top:2px}
+
+/* ── Sections (mobile-first: card layout) ── */
+.sec{padding:12px 14px;margin:6px 8px;background:#14142a;border-radius:10px;border:1px solid #2a2a50}
+.sec h2{font-size:1.05em;color:#7c7cf0;margin-bottom:5px;padding-bottom:3px;border-bottom:1px solid #2a2a50}
+.sec h3{font-size:.9em;color:#f0e07c;margin:8px 0 3px}
+p{margin:3px 0;font-size:.9em;color:#c0c0d0}
+
+/* ── Cards ── */
+.card{border-radius:8px;padding:10px 12px;margin:5px 0;background:#1a1a30}
+.card.blue{border-left:3px solid #7c7cf0}
+.card.blue .t{color:#7c7cf0}
+.card.green{border-left:3px solid #7cf0a0}
+.card.green .t{color:#7cf0a0}
+.card.yellow{border-left:3px solid #f0e07c}
+.card.yellow .t{color:#f0e07c}
+.card.red{border-left:3px solid #f07c7c}
+.card.red .t{color:#f07c7c}
+.card .t{font-weight:600;font-size:.86em;margin-bottom:2px}
+.card .m{font-size:.8em;color:#b0b0c0;margin-top:1px}
+.card .v{font-size:.76em;color:#f0e07c;margin-top:2px;padding-top:2px;border-top:1px solid #2a2a50}
+
+/* ── Tables ── */
+table{width:100%;border-collapse:collapse;margin:4px 0;font-size:.82em}
+th,td{border:1px solid #2a2a50;padding:4px 6px;text-align:left;vertical-align:top}
+th{background:#222245;color:#7c7cf0;font-weight:600}
+/* On mobile: table rows become cards */
+@media(max-width:767px){
+  table,thead,tbody,tr,th,td{display:block}
+  thead{display:none}
+  tr{background:#1a1a30;border-radius:8px;padding:9px 11px;margin:4px 0;border-left:3px solid #7c7cf0}
+  td{border:none;padding:1px 0;font-size:.82em}
+  td::before{content:attr(data-label);font-weight:600;color:#7c7cf0;display:inline-block;width:90px;flex-shrink:0}
+}
+
+/* ── Tags ── */
+.tag{display:inline-block;padding:1px 7px;border-radius:3px;font-size:.65em;font-weight:600;margin:1px}
+.tg1{background:#0a3a0a;color:#a0f0a0}
+.tg2{background:#3a2a00;color:#f0d070}
+.tg3{background:#300010;color:#f07080}
+.tg4{background:#001030;color:#70a0f0}
+
+/* ── Misc ── */
+.cite{font-size:.68em;color:#606080;margin-top:6px}
+hr{border:none;border-top:1px solid #2a2a50;margin:10px 0}
+.fl{display:flex;flex-wrap:wrap;gap:4px;margin:3px 0}
+.fl .b{background:#222240;border-radius:5px;padding:3px 7px;font-size:.74em;flex:1;min-width:70px;text-align:center;color:#a0a0c0}
+
+/* ── Desktop responsive ── */
+@media(min-width:768px){
+  body{font-size:14px;max-width:1000px;margin:0 auto;padding:0 14px 40px}
+  .sec{padding:16px 20px;margin:8px 0}
+  .sec h2{font-size:1.1em}
+  .card{padding:12px 16px;margin:6px 0;border-left-width:4px}
+  .card .t{font-size:.92em}
+  .card .m{font-size:.85em}
+  .card .v{font-size:.82em}
+  table{font-size:.88em}
+  th,td{padding:5px 10px}
+  .fl .b{font-size:.8em;padding:4px 10px}
+}
+</style>
+</head>
+<body>
+
+<hdr>
+<h1>🔬 TITLE</h1>
+<div class="s">Subtitle or description</div>
+</hdr>
+
+<!-- Card section example -->
+<div class="sec">
+<h2>📌 Section Title</h2>
+<p>Description text here.</p>
+<div class="card blue">
+<div class="t">🔹 Card Title</div>
+<div class="m">Description or explanation.</div>
+<div class="v">Value / threshold / standard</div>
+</div>
+</div>
+
+<!-- Table section example -->
+<div class="sec">
+<h2>📊 Table Section</h2>
+<table>
+<thead><tr><th>Col1</th><th>Col2</th><th>Col3</th></tr></thead>
+<tbody>
+<tr><td data-label="Col1">Value 1</td><td data-label="Col2">Value 2</td><td data-label="Col3">Value 3</td></tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>

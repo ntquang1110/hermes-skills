@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "Tên nhóm nghiên cứu (ví dụ: NHÓM 2 — REE nặng + CeO2 NP trên heo)",
+    "group": "2",
+    "created": "YYYY-MM-DD",
+    "language": "vi",
+    "note": "Mỗi dòng = 1 nguyên tố/dạng x 1 tác dụng hoặc 1 độc tính. Mức bằng chứng: Mạnh | Vừa | Sơ bộ | Không có bằng chứng trực tiếp. Không bịa PMID/DOI/patent. Patent bị chặn -> ghi 'chưa verify'."
+  },
+  "rows": [
+    {
+      "id": "slug-ngan-nhat-dinh",
+      "element": "Tên nguyên tố/dạng (vd: CeO2 NP)",
+      "element_vi": "Tên tiếng Việt có dấu",
+      "name_en": "English name (form-specific)",
+      "effect": "MỘT tác dụng HOẶC một độc tính — một dòng chỉ chứa một luận điểm",
+      "group": "Nhóm phân loại (vd: Nano REE | REE nặng | REE hỗn hợp)",
+      "mechanism": "Cơ chế cụ thể, ngắn gọn, ghi đúng loài/mô hình của bằng chứng",
+      "evidence_level": "Mạnh|Vừa|Sơ bộ|Không có bằng chứng trực tiếp",
+      "dosage_ref": "Liều (chỉ ghi liều của đúng loài/mô hình trong bằng chứng; không có -> ghi rõ 'Không có liều trên X')",
+      "side_effects": [
+        "Tác dụng phụ 1",
+        "Ghi rõ nếu chỉ suy ra từ loài khác"
+      ],
+      "references": [
+        {
+          "type": "paper",
+          "label": "Tác giả, tạp chí, năm — đủ để nhận diện",
+          "pmid": "SỐ PMID ĐÃ VERIFY (bỏ trống nếu chưa verify — KHÔNG bịa)",
+          "doi": "DOI đã verify qua efetch XML (bỏ trống nếu bài cũ không có DOI)",
+          "note": "Bài này thực sự chứng minh điều gì: loài, liều, hướng tác dụng"
+        }
+      ],
+      "verification": "PMID/DOI đã verify qua NCBI E-utilities (esearch/esummary/efetch, ngày). Patent: Google Patents bị chặn -> chưa verify."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+name = "gist-preview"
+main = "worker-gist-preview.js"
+compatibility_date = "2025-04-01"
+
+# Workers.dev subdomain (fallback)
+workers_dev = true
+
+# Custom domain
+routes = [
+  { pattern = "preview.thefirstonly.com/*", zone_id = "09a2d553b4c5ce037065260ea1feb732" }
+]
+
+# KV Store for direct HTML storage (no Gist needed)
+[[kv_namespaces]]
+binding = "HTML_STORE"
+id = "e5e9e04ae5dc4c5cb3540ea00202d5e4"

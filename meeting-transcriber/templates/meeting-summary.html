@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting Summary - {{TITLE}}</title>
+<style>
+  :root {
+    --yellow: #FFD600;
+    --black: #0D0D0D;
+    --gray-900: #1B1B1D;
+    --gray-800: #2A2A2E;
+    --gray-700: #3A3A3E;
+    --gray-400: #9CA3AF;
+    --gray-200: #E5E5E7;
+    --gray-100: #F3F3F5;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background: var(--black);
+    color: var(--gray-200);
+    line-height: 1.6;
+    padding: 0;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 40px 16px 32px;
+    border-bottom: 2px solid var(--yellow);
+    margin-bottom: 32px;
+  }
+  .header h1 {
+    color: var(--yellow);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .header .meta {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+    margin-top: 8px;
+  }
+
+  /* Cards */
+  .card {
+    background: var(--gray-900);
+    border: 1px solid var(--gray-800);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .card-header .icon { font-size: 1.3rem; }
+
+  /* KPI Grid */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .kpi-item {
+    background: var(--gray-800);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .kpi-label {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .kpi-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--yellow);
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  th {
+    background: var(--gray-800);
+    color: var(--gray-400);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--gray-700);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--gray-800);
+    color: var(--gray-200);
+  }
+  tr:last-child td { border-bottom: none; }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 20px;
+  }
+  li { margin-bottom: 6px; }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .tag-red { background: #7F1D1D; color: #FCA5A5; }
+  .tag-yellow { background: #713F12; color: #FDE68A; }
+  .tag-green { background: #14532D; color: #86EFAC; }
+  .tag-blue { background: #1E3A5F; color: #93C5FD; }
+
+  /* Context box */
+  .context-box {
+    background: var(--gray-800);
+    border-left: 3px solid var(--yellow);
+    padding: 16px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* Two columns on desktop */
+  @media (min-width: 768px) {
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  /* Decision items */
+  .decision-item, .next-step-item {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-800);
+    display: flex;
+    gap: 8px;
+  }
+  .decision-item:last-child, .next-step-item:last-child { border-bottom: none; }
+  .decision-bullet { color: var(--yellow); font-weight: 700; }
+
+  /* Risk / Blockers */
+  .risk-item, .blocker-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-800);
+  }
+  .risk-item:last-child, .blocker-item:last-child { border-bottom: none; }
+  .risk-icon { font-size: 1.2rem; }
+
+  /* Responsive tables - horizontal scroll on small screens */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .footer {
+    text-align: center;
+    color: var(--gray-400);
+    font-size: 0.75rem;
+    padding: 32px 16px;
+    border-top: 1px solid var(--gray-800);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>📋 Meeting Summary</h1>
+    <div class="meta">{{DATE}} · {{DURATION}}</div>
+  </div>
+
+  <!-- OVERALL CONTEXT -->
+  <div class="context-box">
+    <strong>🧭 Overall Context</strong><br>
+    {{CONTEXT}}
+  </div>
+
+  <!-- TWO COLUMN LAYOUT -->
+  <div class="two-col">
+
+    <!-- 👑 CEO VIEW -->
+    <div class="card">
+      <div class="card-header"><span class="icon">👑</span> Góc nhìn CEO</div>
+
+      <!-- KPI Cards -->
+      <div class="kpi-grid">
+        {{KPI_CARDS}}
+      </div>
+
+      <!-- Blockers -->
+      {{BLOCKERS}}
+
+      <!-- Risks -->
+      {{RISKS}}
+    </div>
+
+    <!-- 🤝 ASSISTANT VIEW -->
+    <div class="card">
+      <div class="card-header"><span class="icon">🤝</span> Góc nhìn Trợ lý</div>
+
+      <!-- Action Items -->
+      <h4 style="color:var(--gray-400);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px;">✅ Action Items</h4>
+      {{ACTION_ITEMS}}
+
+      <!-- Decisions -->
+      {{DECISIONS}}
+
+      <!-- Next Steps -->
+      {{NEXT_STEPS}}
+    </div>
+
+  </div><!-- /two-col -->
+
+  <div class="footer">
+    Generated by Hermes Agent · Meeting Transcriber
+  </div>
+
+</div>
+</body>
+</html>

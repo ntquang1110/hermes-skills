@@ -1,0 +1,827 @@
+{
+  "mo_ta": "KB phap ly Viet Nam — kiem tra hieu luc van bang code, khong de LLM doan",
+  "cap_nhat": "2026-10-03T07:32:13",
+  "nguon_goc": "Tu cac skill da verify: vietnam-legal-advisory, legal-contract-review-vn, research-reporting",
+  "van_ban": [
+    {
+      "so_hieu": "91/2015/QH13",
+      "ten": "Bo luat Dan su 2015",
+      "nhom": "bo_luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2016-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "hop dong",
+        "nghia vu",
+        "bac bo",
+        "bao hanh",
+        "phat huy",
+        "giai the",
+        "cham tra",
+        "quyen tai san"
+      ],
+      "pham_vi": [
+        "tu phap luong dai so",
+        "doanh nghiep",
+        "dich vu",
+        "thuong mai"
+      ],
+      "tom_tat": "Luat cu nen cho moi quy hoi dan su. Dieu 351 dinh nghia bat kha khang. Dieu 398 hieu luc cua chuong trinh hoa don. Luat 2025 sua doi bo sung mot so dieu, dung ban hop nhat moi nhat.",
+      "nguon": "vbpl.vn/bo-tu-phap/Pages/vbpq-toanvan.aspx?ItemID=110040"
+    },
+    {
+      "so_hieu": "36/2005/QH11",
+      "ten": "Luat Thuong mai 2005",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2006-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "thuong mai",
+        "mua ban",
+        "dich vu",
+        "phat huy hop dong",
+        "bao hanh",
+        "van chuyen"
+      ],
+      "pham_vi": [
+        "doanh nghiep",
+        "thuong ai",
+        "dich vu thuong mai"
+      ],
+      "tom_tat": "Dieu 301 tran 8% cho phat huy hop dong. Dieu 44 xu ly hang loi. Doi voi mua ban thiet bi: phat huy 30% vuot tran, phai sua ve 8%; cham giao 1%/ngay tran 8%.",
+      "nguon": "vbpl.vn/bo-cong-thuong/Pages/vbpq-toanvan.aspx?ItemID=11058"
+    },
+    {
+      "so_hieu": "92/2015/QH13",
+      "ten": "Bo luat To tung Dan su 2015",
+      "nhom": "bo_luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2017-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "to tung",
+        "phan biet",
+        "thieu thu",
+        "hanh thi hanh chinh"
+      ],
+      "pham_vi": [
+        "vu an dan su",
+        "tranh chap thuong mai",
+        "ke duyet"
+      ],
+      "tom_tat": "Bo luat chu cho thu muc vu an va hanh thi hanh chinh. Khong ap dung cho thu muc xu ly vi pham hanh chinh co ky thuat, vi pham hanh chinh trong linh vu kinh doanh, hoac hanh chinh lien quan den quyen tai san, thuong mai, dau tu, nong nghiep, dat dai, giao duc, y te, lao dong va moi truong.",
+      "nguon": "vbpl.vn/bo-tu-phap/Pages/vbpq-toanvan.aspx?ItemID=110478"
+    },
+    {
+      "so_hieu": "61/2024/QH15",
+      "ten": "Luat Dien luc 2024",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-02-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dien luc",
+        "dien nang",
+        "diem tat chuong",
+        "phat dien",
+        "bao dam cap dien"
+      ],
+      "pham_vi": [
+        "nang luong",
+        "dien toan thuong",
+        "xay dung",
+        "dat dai"
+      ],
+      "tom_tat": "QUAN TRONG: so hieu nay la 61/2024/QH15, KHONG phai 78/2024/QH15 (nhieu nguon sai). Dieu 20, 22, 30, 33 ve trai phep ban dien va dieu 218 cua Luat Dat dai.",
+      "nguon": "chinhphu.vn — da verify 09/2026, doi chieu 3 nguon khop"
+    },
+    {
+      "so_hieu": "135/2024/ND-CP",
+      "ten": "Nghi dinh 135/2024/ND-CP ve dien mat troi mai nha",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2024-08-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dien mat troi",
+        "dien nang",
+        "mai nha",
+        "hop dong mua ban dien"
+      ],
+      "pham_vi": [
+        "nang luong",
+        "xay dung",
+        "doanh nghiep"
+      ],
+      "tom_tat": "Dieu kien lap dat, cong suat, thong bao/dang ky, mien GPHDD, hop dong 5 nam. PHAI phan biet voi NĐ 135/2025/ND-CP (che do tai chinh TCTD) va 135/2020/ND-CP (tuoi nghi huu).",
+      "nguon": "chinhphu.vn — da verify 09/2026"
+    },
+    {
+      "so_hieu": "135/2020/ND-CP",
+      "ten": "Nghi dinh 135/2020/ND-CP ve tuoi nghi huu",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2021-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "lao dong",
+        "tuoi nghi huu",
+        "bao hiem xa hoi"
+      ],
+      "pham_vi": [
+        "lao dong"
+      ],
+      "tom_tat": "Bien chan tuoi nghi huu. CANH BAO: nhieu nguon nham so hieu nay voi 135/2024/ND-CP va 135/2025/ND-CP.",
+      "nguon": "vanban.chinhphu.vn"
+    },
+    {
+      "so_hieu": "135/2025/ND-CP",
+      "ten": "Nghi dinh 135/2025/ND-CP ve che do tai chinh TCTD",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-07-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "tai chinh",
+        "TCTD",
+        "doanh nghiep nho"
+      ],
+      "pham_vi": [
+        "doanh nghiep",
+        "ngan hang"
+      ],
+      "tom_tat": "Che do tai chinh cua doanh nghiep nho, thuong nhon. PHAI phan biet voi 135/2024/ND-CP va 135/2020/ND-CP.",
+      "nguon": "vanban.chinhphu.vn"
+    },
+    {
+      "so_hieu": "72/2020/QH14",
+      "ten": "Luat Bao ve moi truong 2020",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2021-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "moi truong",
+        "giay phep moi truong",
+        "nuoc thai",
+        "KHK",
+        "phan boi"
+      ],
+      "pham_vi": [
+        "cong nghiep",
+        "nong nghiep",
+        "chan nuoi",
+        "xay dung"
+      ],
+      "tom_tat": "GPKM moi truong, nuoc thai, KHK. Khu vuc dan cu: khong duoc nuoi gia suc de kinh doanh tu 01/01/2025.",
+      "nguon": "thuvienphapluat.vn/van-ban/Tai-nguyen-Moi-truong"
+    },
+    {
+      "so_hieu": "08/2022/ND-CP",
+      "ten": "Nghi dinh 08/2022/ND-CP ve moi truong",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2022-03-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "moi truong",
+        "GPKM",
+        "KHK",
+        "kiem ke KHK"
+      ],
+      "pham_vi": [
+        "cong nghiep",
+        "chan nuoi",
+        "dich vu"
+      ],
+      "tom_tat": "Quy dinh co che GPKM va kiem ke KHK. KHU VUC: nguong 3000 con lai la DIEN GIAI thi truong thuong gap — can xac nhan van ban danh muc hien hanh. Giu tag hypothesis.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "62-MT:2016",
+      "ten": "QCVN 62-MT:2016/BTNMT nuoc thai chan nuoi",
+      "nhom": "qcvn_tcvn",
+      "trang_thai": "het_hieu_luc_bo_sung",
+      "ngay_hieu_luc": "2017-01-01",
+      "ngay_het_hieu_luc": "2025-09-01",
+      "thay_the_boi": "QCVN 62:2025/BTNMT",
+      "chude": [
+        "nuoc thai",
+        "chan nuoi",
+        "BOD",
+        "COD",
+        "TOC",
+        "moi truong"
+      ],
+      "pham_vi": [
+        "chan nuoi",
+        "xu ly nuoc thai"
+      ],
+      "tom_tat": "Da bi thay the boi QCVN 62:2025/BTNMT tu 01/09/2025. KHONG trich dan ban cu trong tu van moi.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "QCVN 62:2025/BTNMT",
+      "ten": "QCVN 62:2025/BTNMT nuoc thai chan nuoi",
+      "nhom": "qcvn_tcvn",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-09-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "nuoc thai",
+        "chan nuoi",
+        "BOD",
+        "COD",
+        "TOC",
+        "moi truong",
+        "nguon tiep nhan"
+      ],
+      "pham_vi": [
+        "chan nuoi",
+        "xu ly nuoc thai"
+      ],
+      "tom_tat": "Thay the 62-MT:2016. TT 04/2025/TT-BTNMT ban hanh 28/02/2025. Bang 1 co 3 cot A/B/C phan theo chuc nang nguon tiep nhan (QCVN 08:2023, khong theo luu luong). T-P chia 3 loai (ho/song/bien), cho phep chon COD hoac TOC. KHONG co dong rieng NH4+/NH3.",
+      "nguon": "chinhphu.vn — da verify 08/09/2026, doi chieu 3 nguon khop 100%"
+    },
+    {
+      "so_hieu": "98/2024/QH15",
+      "ten": "Luat An toan thuc pham 2024",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-07-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "an toan thuc pham",
+        "TPBVSK",
+        "thuc an bong sung",
+        "ghi nhan",
+        "dinh danh"
+      ],
+      "pham_vi": [
+        "thuc pham",
+        "TACN",
+        "TPBVSK",
+        "chan nuoi"
+      ],
+      "tom_tat": "Khung chinh cho thuc an bong sung chan nuoi (TACN bo sung). Nguon cho TT 13/2020/TT-BNNPTNT. Luật thay the Luật ATTP 2012.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "15/2018/ND-CP",
+      "ten": "Nghi dinh 15/2018/ND-CP ve quan ly an toan thuc pham",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2019-04-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "tu cong bo",
+        "dang ky ban cong bo",
+        "GMP",
+        "ghi nhan",
+        "quang cao"
+      ],
+      "pham_vi": [
+        "thuc pham",
+        "TPBVSK",
+        "thuc an bong sung"
+      ],
+      "tom_tat": "Quy dinh tu cong bo TPBVSK, dang ky ban cong bo, yeu cau GMP TPBVSK. Nen de Vua Kiem ra duong tu cong bo thay vi cho doi tri hoa chat sat trung (thuoc thu y).",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "43/2017/ND-CP",
+      "ten": "Nghi dinh 43/2017/ND-CP ve ghi nhan ho san, phu luc thuc pham, bao bi",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2018-06-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "ghi nhan",
+        "phu luc thuc pham",
+        "nhieu dich",
+        "bao bi"
+      ],
+      "pham_vi": [
+        "thuc pham",
+        "TPBVSK"
+      ],
+      "tom_tat": "Quy dinh ghi nhan nhieu truong: cong dung, thanh phan, huong dan su dung, bao quan, han su dung tu ngay, nguon goc.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "13/2020/TT-BNNPTNT",
+      "ten": "Thong tu 13/2020/TT-BNNPTNT ve thuc an bong sung chan nuoi",
+      "nhom": "thong_tu",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2020-08-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "thuc an bong sung",
+        "TACN",
+        "chan nuoi",
+        "kiem dang ky",
+        "giay phep"
+      ],
+      "pham_vi": [
+        "chan nuoi",
+        "thuc an"
+      ],
+      "tom_tat": "Quy dinh san xuat, kinh doanh thuc an bong sung chan nuoi. Yeu cau giay phep, dieu kien co so, danh muc. CANH BAO pham vi: Luat ATTP 2024 co the da sua doi mot so quy dinh.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "779/QD-TTg",
+      "ten": "Quyet dinh 779/QD-TTg — Ke hoach quoc gia phong chong cum gia cam, lom moi long mong va benh dong vat 2026-2030",
+      "nhom": "quyet_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2026-05-02",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "ATSH",
+        "dich ta lon chau Phi",
+        "phong chong dich benh",
+        "ve sinh tieu doc",
+        "muc tieu giam dich"
+      ],
+      "pham_vi": [
+        "chan nuoi",
+        "nong nghiep",
+        "dich vu quoc gia"
+      ],
+      "tom_tat": "Muc tieu giam >=30% so o dich va so lon tieu huy do ASF so voi TB 2020-2025. ATSH bat buoc ca voi nong ho. HIEU CHINH: day la KH plan gia cam/LMLM + benh dong vat, KHONG phai van ban rieng chi ve ASF — nhung tao song ATBH cho dich vu ve sinh tieu doc dinh ky.",
+      "nguon": "baochinhphu.vn — da verify 05/2026"
+    },
+    {
+      "so_hieu": "31/2020/ND-CP",
+      "ten": "Nghi dinh 31/2020/ND-CP ve dau tu",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2020-08-15",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dau tu",
+        "nganh dau tu",
+        "dieu kien dau tu",
+        "doanh nghiep dau tu"
+      ],
+      "pham_vi": [
+        "dau tu",
+        "doanh nghiep"
+      ],
+      "tom_tat": "Quy dinh nganh/cam dau tu, dieu kien dau tu, thu muc kinh doanh co dieu kien.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "59/2020/QH14",
+      "ten": "Luat Doanh nghiep 2020",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2021-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "doanh nghiep",
+        "von gop",
+        "cong ty co phan",
+        "dia duong",
+        "nhanh vien",
+        "gia the"
+      ],
+      "pham_vi": [
+        "doanh nghiep",
+        "dau tu",
+        "giao dich"
+      ],
+      "tom_tat": "Khung co so cho doi tac gia ve tron va doanh nghiep co phan/TNHH. Cac quy dinh ve phap nhan (quyet dinh, uy quyen, giao dich voi nguoi lien quan) can lay ban hop nhat moi nhat.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "54/2014/QH13",
+      "ten": "Luat Khoang san 2014",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2015-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "khoang san",
+        "giay phep khai thac",
+        "trai phep",
+        "thue",
+        "da nghiep",
+        "moi truong khoang san"
+      ],
+      "pham_vi": [
+        "khoang san",
+        "chat khoang",
+        "dat dai"
+      ],
+      "tom_tat": "Thay the Luat Khoang san 2010. Dieu 22 ve giay phep khai thac (don cap cho trai phep thuoc dai). CANH BAO: phai lay ban hop nhat 2025 neu da sua doi.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "105/2016/QH13",
+      "ten": "Luat Duoc 2016",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2017-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "duoc",
+        "giay phep luu hanh",
+        "GMP",
+        "duoc liet ke"
+      ],
+      "pham_vi": [
+        "duoc",
+        "thuoc",
+        "TPBVSK"
+      ],
+      "tom_tat": "Dieu 32 ve giay phep du kinh doanh duoc. Dieu 68-70 ve gia ky/luu hanh. Phan biet voi thuc an bong sung (Luật ATTP 2024) — HAI KHUNG PHAP LUAT RIENG.",
+      "nguon": "thuvienphapluat.vn/van-ban/The-thao-Y-te"
+    },
+    {
+      "so_hieu": "113/2017/ND-CP",
+      "ten": "Nghi dinh 113/2017/ND-CP ve hoa chat",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2018-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "hoa chat",
+        "giam cong nhan",
+        "kinh doanh hoa chat",
+        "mua ban"
+      ],
+      "pham_vi": [
+        "hoa chat",
+        "chan nuoi",
+        "cong nghiep"
+      ],
+      "tom_tat": "Phan loai hoa chat, kiem soat kinh doanh hoa chat nguy hiem, giam cong nhan. Lien quan voi san xuat chat sat trung trong chuannoi.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "18/2008/QH12",
+      "ten": "Luat An toan buc xa va Hat nhan 2008",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2008-12-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "buc xa",
+        "hat nhan",
+        "giay phep",
+        "vuc phong bau"
+      ],
+      "pham_vi": [
+        "y hoc",
+        "cong nghiep",
+        "cap xuat"
+      ],
+      "tom_tat": "Giay phep viec buc xa, hat nhan, vuc phong bau. Lien quan voi thieu cap dung tiep theo.",
+      "nguon": "thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin"
+    },
+    {
+      "so_hieu": "142/2020/ND-CP",
+      "ten": "Nghi dinh 142/2020/ND-CP ve an toan buc xa va hat nhan",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2020-08-15",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "buc xa",
+        "hat nhan",
+        "giay phep",
+        "an toan hat nhan"
+      ],
+      "pham_vi": [
+        "y hoc",
+        "cong nghiep"
+      ],
+      "tom_tat": "Quy dinh chi tiep ve giay phep buc xa va hat nhan.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "105/2022/ND-CP",
+      "ten": "Nghi dinh 105/2022/ND-CP ve luu tru, luu giu va luu chuyen du lieu duoi dang dien tu",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2022-08-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "du lieu",
+        "luu giu",
+        "e-contract",
+        "hoa don dien tu",
+        "chuyen du lieu"
+      ],
+      "pham_vi": [
+        "doanh nghiep",
+        "dich vu so",
+        "chung chung lien nganh"
+      ],
+      "tom_tat": "Quy dinh luu giu va chuyen du lieu dien tu. Lien quan voi hop dong dien tu, hoa don dien tu. Ket hop voi Luat Hoa don 51/2019/QH14.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "51/2019/QH14",
+      "ten": "Luat Hoa don 2019",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2020-07-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "hoa don",
+        "hoa don dien tu",
+        "chung tu",
+        "thanh toan"
+      ],
+      "pham_vi": [
+        "thue",
+        "doanh nghiep",
+        "dich vu"
+      ],
+      "tom_tat": "Khung hoa don, gia tri hoa don, hoa don dien tu. Lien quan voi thue GTGT trong hop dong dich vu.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "45/2019/QH14",
+      "ten": "Luat Lao dong 2019",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2021-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "lao dong",
+        "hop dong lao dong",
+        "luong",
+        "bao hiem xa hoi",
+        "nghi phe p"
+      ],
+      "pham_vi": [
+        "lao dong",
+        "doanh nghiep",
+        "dich vu"
+      ],
+      "tom_tat": "Hop dong lao dong, thoii gio lam viec, luong, bao hiem xa hoi, nghi phe p. Lien quan voi hop dong ngoai hinh (dich vu) va khoan hoa hong.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "111/2013/TT-BTC",
+      "ten": "Thong tu 111/2013/TT-BTC ve thue thu nhap ca nhan",
+      "nhom": "thong_tu",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2014-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "thue TNCN",
+        "khau tru",
+        "hoa hong",
+        "thu lao khoan",
+        "vay"
+      ],
+      "pham_vi": [
+        "thue",
+        "doanh nghiep",
+        "hop dong"
+      ],
+      "tom_tat": "Dieu 25: khau tru thue TNCN 10% voi thu lao khong xac dinh ro nguon (VD hoa hong trong hop dong gioi thieu). Lien quan truc tiep voi hop dong tu van von / dai ly thuong mai.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "24/2019/TT-BYT",
+      "ten": "Thong tu 24/2019/TT-BYT ve phu gia thuc pham",
+      "nhom": "thong_tu",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2019-11-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "phu gia",
+        "danh muc",
+        "GMP",
+        "nhom thuc pham",
+        "vi du"
+      ],
+      "pham_vi": [
+        "thuc pham",
+        "TPBVSK",
+        "doanh nghiep thuc pham"
+      ],
+      "tom_tat": "Danh muc phu gia thuc pham. Phu luc 1 (danh muc), ML 2A/2B, GMP 3. QUAN TRONG: cac muc dinh ky trinh bay o NHIEU TANG bang song song (bang theo ma nhom GSFA 14.x, bang theo ten nhom thuc pham, va phu luc rieng cho che do GMP). Chi doc 1 tang bang roi ket luan la SAI. Da sua doi boi TT 17/2023 va 08/2024.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "02/2020/TT-BNNPTNT",
+      "ten": "Thong tu 02/2020/TT-BNNPTNT ve thu muc kinh doanh co dieu kien",
+      "nhom": "thong_tu",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2020-03-02",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "thu muc kinh doanh",
+        "dieu kien",
+        "chan nuoi",
+        "trang trai",
+        "nguon goc tin doi"
+      ],
+      "pham_vi": [
+        "chan nuoi",
+        "thuy san",
+        "nong nghiep",
+        "nganh ke"
+      ],
+      "tom_tat": "Dieu 3: tieu chi kinh te trang trai — chan nuoi/thuy san/trang trai tong hop >= 2,0 ty dong/nam. Day la nguon goc cua tin gia '2 ty doanh thu' trong dao dien mat troi, KHONG phai quy dinh ve dien mat troi hay dat dai.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "102/2024/ND-CP",
+      "ten": "Nghi dinh 102/2024/ND-CP ve dat dai",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2024-08-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dat dai",
+        "lay dat",
+        "chuyen muc dich",
+        "dia o",
+        "thue dat"
+      ],
+      "pham_vi": [
+        "dat dai",
+        "xay dung",
+        "nong nghiep",
+        "nang luong"
+      ],
+      "tom_tat": "Dieu 99: dat duoi tam pin dien mat troi — toi da 50% dien tich, UBND tinh phe duyet phuong an, phai nop tien thue dat hang nam.",
+      "nguon": "chinhphu.vn"
+    },
+    {
+      "so_hieu": "43/2024/QH15",
+      "ten": "Luat sua doi Luat Dat dai 2024",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2024-08-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "keo dai hieu luc Luat Dat dai 2024"
+      ],
+      "pham_vi": [
+        "dat dai",
+        "xay dung",
+        "nong nghiep"
+      ],
+      "tom_tat": "Dieu 218: dieu kien dat duoi tam pin dien mat troi. Thay the Luat Dat dai 2013.",
+      "nguon": "vbpl.vn"
+    },
+    {
+      "so_hieu": "12/2025/QH15",
+      "ten": "Luat chuyen doi mau moi truong",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-07-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "mau moi truong",
+        "kinh doanh carbon"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "31/2024/QH15",
+      "ten": "Luat Dat dai 2024",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dat dai",
+        "thu hoi dat",
+        "boi thuong",
+        "giao dich dat"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "22/2023/QH15",
+      "ten": "Luat Dau thau 2023",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2024-01-01",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dau thau",
+        "ban giao dat cong"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "13/2003/QH11",
+      "ten": "Luat Dat dai 2003",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2004-07-01",
+      "ngay_het_hieu_luc": "2014-07-01",
+      "chude": [
+        "dat dai 2003 ap dung cho su kien nam 2005"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "74/VBHN-VPQH",
+      "ten": "Van ban hop nhat Luat Dau thau",
+      "nhom": "quyet_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2026-03-25",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "ban hop nhat dung khi trich dan Luat Dau thau 2023"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "23/2005/QH11",
+      "ten": "Bo luat Dan su 2005",
+      "nhom": "bo_luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2007-01-01",
+      "ngay_het_hieu_luc": "2017-01-01",
+      "chude": [
+        "bo luat dan su 2005 - ap dung cho giao dich nam 2005"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "45/2013/QH13",
+      "ten": "Luat Dat dai 2013",
+      "nhom": "luat",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2014-07-01",
+      "ngay_het_hieu_luc": "2025-01-01",
+      "chude": [
+        "dat dai 2013 - giai doan 2014-2024"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "214/2025/ND-CP",
+      "ten": "Nghi dinh 214/2025/ND-CP ve dau thau",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2025-08-04",
+      "ngay_het_hieu_luc": null,
+      "chude": [
+        "dau thau - thay the Nghi dinh 24/2024/ND-CP"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    },
+    {
+      "so_hieu": "181/2004/ND-CP",
+      "ten": "Nghi dinh 181/2004/ND-CP thi hanh Luat Dat dai 2003",
+      "nhom": "nghi_dinh",
+      "trang_thai": "hieu_luc",
+      "ngay_hieu_luc": "2004-11-16",
+      "ngay_het_hieu_luc": "2014-07-01",
+      "chude": [
+        "thi hanh Luat Dat dai 2003"
+      ],
+      "pham_vi": [],
+      "tom_tat": "",
+      "nguon": "",
+      "thay_the_boi": null,
+      "ngay_them": "2026-10-03"
+    }
+  ]
+}

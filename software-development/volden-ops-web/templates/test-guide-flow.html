@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volden Ops — Test Flow: [TÊN MODULE]</title>
+<style>
+  /* Design System v1.0 — Premium B/W/Y */
+  :root {
+    --yellow: #FFD600;
+    --dark: #0D0D0D;
+    --surface-dark: #1B1B1D;
+    --light: #F6F6F4;
+    --surface-light: #FFFFFF;
+    --text: #111111;
+    --text-secondary: #8B8B8B;
+    --success: #44C767;
+    --warning: #FFB800;
+    --danger: #FF4B4B;
+    --radius-card: 28px;
+    --radius-pill: 999px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .hero { background: var(--dark); color: #fff; padding: 64px 24px 48px; border-radius: 0 0 40px 40px; }
+  .hero .badge { display: inline-block; background: var(--yellow); color: #000; font-size: 12px; font-weight: 700; padding: 6px 16px; border-radius: var(--radius-pill); letter-spacing: 0.5px; text-transform: uppercase; }
+  .hero h1 { font-size: 32px; font-weight: 700; line-height: 1.2; margin-top: 16px; max-width: 640px; }
+  .hero p.sub { font-size: 16px; color: rgba(255,255,255,.7); margin-top: 12px; max-width: 560px; }
+  .container { max-width: 960px; margin: 0 auto; padding: 24px 20px 64px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-top: -28px; padding: 0 24px; position: relative; z-index: 2; }
+  .stat-card { background: var(--surface-light); border-radius: var(--radius-card); padding: 24px; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
+  .stat-card .num { font-size: 32px; font-weight: 700; color: var(--dark); }
+  .stat-card .label { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+  .stat-card.highlight { background: var(--yellow); }
+  .section { margin-top: 48px; }
+  .section h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .section .desc { font-size: 14px; color: var(--text-secondary); margin-bottom: 24px; }
+  .flow { display: flex; flex-direction: column; gap: 0; }
+  .flow-step { background: var(--surface-light); border-radius: var(--radius-card); padding: 24px; box-shadow: 0 8px 20px rgba(0,0,0,.06); position: relative; }
+  .flow-step .step-num { position: absolute; top: 20px; right: 24px; width: 40px; height: 40px; background: var(--dark); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
+  .flow-step .step-title { font-size: 16px; font-weight: 700; padding-right: 56px; }
+  .flow-step .step-body { font-size: 13px; color: var(--text-secondary); margin-top: 8px; }
+  .flow-step .step-body strong { color: var(--text); }
+  .flow-arrow { text-align: center; color: var(--yellow); font-size: 22px; font-weight: 700; padding: 6px 0; }
+  .flow-step.warn { border-left: 4px solid var(--warning); }
+  .flow-step.danger { border-left: 4px solid var(--danger); }
+  .flow-step.success { border-left: 4px solid var(--success); }
+  .flow-step.api { border-left: 4px solid #4A4ADB; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: var(--radius-pill); margin-right: 6px; margin-top: 8px; }
+  .tag.req { background: #FFE5E5; color: var(--danger); }
+  .tag.opt { background: #E5F6EA; color: #1E9E4B; }
+  .tag.cond { background: #FFF4D6; color: #B37400; }
+  .tag.api { background: #E8E8FF; color: #4A4ADB; }
+  .testcase { background: var(--surface-light); border-radius: var(--radius-card); padding: 24px; box-shadow: 0 8px 20px rgba(0,0,0,.06); margin-bottom: 12px; }
+  .testcase-header { display: flex; align-items: flex-start; gap: 12px; }
+  .testcase-id { flex-shrink: 0; background: var(--dark); color: var(--yellow); font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: var(--radius-pill); }
+  .testcase .tc-title { font-size: 14px; font-weight: 700; }
+  .testcase .tc-detail { font-size: 13px; color: var(--text-secondary); margin-top: 6px; }
+  .testcase .tc-detail .expect { color: var(--success); font-weight: 600; }
+  .testcase .tc-detail .block { color: var(--danger); font-weight: 600; }
+  .tc-check { display: flex; align-items: center; gap: 10px; margin-top: 12px; font-size: 13px; font-weight: 600; cursor: pointer; user-select: none; }
+  .tc-check input { width: 20px; height: 20px; accent-color: var(--dark); }
+  .done-box { background: var(--dark); color: #fff; border-radius: var(--radius-card); padding: 32px; margin-top: 32px; text-align: center; }
+  .done-box h3 { font-size: 20px; font-weight: 700; }
+  .done-box p { font-size: 14px; color: rgba(255,255,255,.7); margin-top: 8px; }
+  .done-box .yellow { color: var(--yellow); font-weight: 700; }
+  .tips { background: #FFF8E1; border: 2px solid var(--yellow); border-radius: var(--radius-card); padding: 24px; margin-top: 24px; }
+  .tips h3 { font-size: 16px; font-weight: 700; }
+  .tips ul { margin-top: 8px; padding-left: 20px; }
+  .tips li { font-size: 13px; margin-bottom: 6px; }
+  .footer { text-align: center; font-size: 12px; color: var(--text-secondary); padding: 24px; }
+  @media print { .hero { border-radius: 0; } .stats { margin-top: 16px; padding: 0; } }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="badge">Test Guide · [TÊN MODULE]</span>
+  <h1>[TÊN MODULE] — Kiểm thử toàn bộ luồng</h1>
+  <p class="sub">Hướng dẫn tester đi từng bước. Hoàn thành tất cả test case không lỗi = module đã test xong.</p>
+</div>
+
+<div class="stats">
+  <div class="stat-card highlight"><div class="num">[N]</div><div class="label">Bước chính</div></div>
+  <div class="stat-card"><div class="num">[N]</div><div class="label">Test case</div></div>
+  <div class="stat-card"><div class="num">~[N]</div><div class="label">Phút test</div></div>
+  <div class="stat-card"><div class="num">[role]</div><div class="label">Account test</div></div>
+</div>
+
+<div class="container">
+
+<div class="section">
+  <h2>📍 Flow tổng quan</h2>
+  <p class="desc">[N] bước — đi từ trên xuống, mỗi bước có việc cần làm và điều kiện xảy ra.</p>
+  <div class="flow">
+    <!-- COPY-PASTE các flow-step, thay nội dung. VD:
+    <div class="flow-step">
+      <div class="step-num">0</div>
+      <div class="step-title">Bước mở đầu</div>
+      <div class="step-body">Mô tả việc làm + <strong>điều kiện</strong>.</div>
+      <span class="tag req">Bắt buộc</span>
+    </div>
+    <div class="flow-arrow">▼</div>
+    -->
+  </div>
+</div>
+
+<div class="section">
+  <h2>🧪 Test cases ([N])</h2>
+  <p class="desc">Tick vào ô sau mỗi test PASS. Tất cả tick xanh = module hoàn thành.</p>
+  <!-- COPY-PASTE các testcase block. VD:
+  <div class="testcase">
+    <div class="testcase-header">
+      <span class="testcase-id">TC-1</span>
+      <div>
+        <div class="tc-title">Tên test</div>
+        <div class="tc-detail">Bước: ...<br>Kỳ vọng: <span class="expect">PASS khi...</span> / <span class="block">block khi...</span></div>
+        <label class="tc-check"><input type="checkbox"> PASS</label>
+      </div>
+    </div>
+  </div>
+  -->
+  <div class="done-box">
+    <h3>✅ Tất cả test case PASS = <span class="yellow">Module [TÊN] đã test xong</span></h3>
+    <p>Báo lại kết quả cho anh Quang kèm ảnh chụp nếu có lỗi.</p>
+  </div>
+  <div class="tips">
+    <h3>💡 Mẹo khi test</h3>
+    <ul>
+      <li>Ghi chú lại dữ liệu đã tạo để dùng cho module tiếp theo.</li>
+      <li>Nếu gặp lỗi: chụp màn hình <strong>.jpg</strong> → gửi kèm bước đang làm.</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">Volden Ops — Test Guide · [TÊN MODULE] · 2026</div>
+
+</body>
+</html>

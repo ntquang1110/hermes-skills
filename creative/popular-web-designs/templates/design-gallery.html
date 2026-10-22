@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Template Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f6f3f1;
+  color: #242424;
+  padding: 32px 24px;
+}
+.container { max-width: 1400px; margin: 0 auto; }
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: #171717;
+}
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0dcd9;
+  color: #333;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e0dcd9;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.card-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.card-header .theme-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+.card-body { padding: 16px; }
+.card-body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #171717;
+}
+.card-body .vibe {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.card-body .colors {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+.card-body .desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.copy-btn:hover { background: #f5f5f5; border-color: #bbb; }
+.copy-btn.copied { background: #d4edda; border-color: #58cc02; color: #1a7a02; }
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #242424;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Design Template Gallery</h1>
+  <p class="subtitle">Click "Copy theme name" to select a design, then tell me the name</p>
+
+  <div class="section-title">Fintech & Crypto</div>
+  <div class="grid" id="fintech-grid"></div>
+
+  <div class="section-title">Editorial & Creative</div>
+  <div class="grid" id="editorial-grid"></div>
+
+  <div class="section-title">AI & Machine Learning</div>
+  <div class="grid" id="ai-grid"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const designs = {
+  fintech: [
+    { name: 'mercury', site: 'Mercury', vibe: 'Alpine banking at blue hour', theme: 'dark', colors: ['#171721','#1e1e2a','#5266eb','#ededf3'], desc: 'Near-black canvas, single cobalt accent, flat borderless cards, pill controls, weight 480 typography' },
+    { name: 'slash', site: 'Slash', vibe: 'Midnight vault with gilded ledger lines', theme: 'dark', colors: ['#08080a','#040406','#cc9166','#ffffff'], desc: 'Didone serif Ivy Presto headlines, copper accent, 9999px pill buttons, 160px section gaps' },
+    { name: 'slush', site: 'Slush', vibe: 'Inflatable sticker universe on pastel paper', theme: 'light', colors: ['#ffffff','#dceeff','#4da2ff','#000000'], desc: '640px crushed display, 6-color sticker palette, 3D ribbons, 1px black outlines everywhere' },
+  ],
+  editorial: [
+    { name: 'monad', site: 'Monad', vibe: 'Editorial tech journal on warm parchment', theme: 'light', colors: ['#f6f3f1','#2b59d1','#242424','#cecac8'], desc: 'Mono body + serif display, 100px pill buttons, 40px card radius, Lake Blue accent' },
+    { name: 'general-intelligence', site: 'G.I. Company', vibe: 'Literary journal beside a bonfire', theme: 'light', colors: ['#fefffc','#dee2de','#41a1cf','#2c2c2c'], desc: 'ppmondwest serif, green-tinted Mist borders, Signal Blue as border-only accent, hand-painted illustrations' },
+    { name: 'gsap', site: 'GSAP', vibe: 'Animated chalkboard in a design studio', theme: 'dark', colors: ['#0e100f','#fffce1','#0ae448','#42433d'], desc: '224px display at lh 0.9, 5 discipline colors, ghost pills, curly-bracket annotations' },
+    { name: 'monopo-saigon', site: 'Monopo Saigon', vibe: 'Liquid iridescence behind editorial silence', theme: 'light', colors: ['#ffffff','#000000','#636363','#9a9a9a'], desc: '225px Roobert display, sharp 0px + 75px pill contrast, iridescent hero gradient only' },
+    { name: 'oryzo-ai', site: 'ORYZO AI', vibe: 'Darkroom product editorial', theme: 'dark', colors: ['#100904','#ffedd7','#dc5000','#40372e'], desc: 'Warm dark canvas, cream uppercase typography, Ember orange for credits only, 100vh sections' },
+    { name: 'say-briefly', site: 'Say Briefly', vibe: 'Creative agency sketchbook on cream paper', theme: 'light', colors: ['#fcfaf5','#1a3300','#ffe95c','#a8e5e5'], desc: 'Bricolage Grotesque 800 with positive tracking, forest green backbone, yellow marker highlights' },
+    { name: 'duolingo', site: 'Duolingo', vibe: 'Playful classroom mascot on white paper', theme: 'light', colors: ['#ffffff','#58cc02','#1cb0f6','#777777'], desc: 'Chunky rounded feather display, 12px radius everywhere, 2px sticker borders, green accent' },
+  ],
+  ai: [
+    { name: 'modal', site: 'Modal', vibe: 'Phosphor terminal in a darkened server room', theme: 'dark', colors: ['#000000','#7fee64','#ddffdc','#8cab87'], desc: 'Green-on-black terminal aesthetic, Goga display, Lime Pulse on one element per viewport, code windows' },
+  ]
+};
+
+function copyTheme(name) {
+  navigator.clipboard.writeText(name).then(() => {
+    const toast = document.getElementById('toast');
+    toast.textContent = 'Copied: ' + name;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2000);
+  });
+}
+
+function renderGrid(containerId, items) {
+  const grid = document.getElementById(containerId);
+  items.forEach(d => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const bgGrad = d.theme === 'dark'
+      ? `linear-gradient(135deg, ${d.colors[0]}, ${d.colors[1] || d.colors[0]})`
+      : `linear-gradient(135deg, ${d.colors[0]}, ${d.colors[1] || d.colors[0]})`;
+    card.innerHTML = `
+      <div class="card-header" style="background:${bgGrad}">
+        <span class="theme-badge">${d.theme}</span>
+        <span style="font-weight:600;opacity:0.9">${d.site}</span>
+      </div>
+      <div class="card-body">
+        <h3>${d.site}</h3>
+        <div class="vibe">${d.vibe}</div>
+        <div class="colors">${d.colors.map(c => `<div class="color-swatch" style="background:${c}" title="${c}"></div>`).join('')}</div>
+        <div class="desc">${d.desc}</div>
+        <button class="copy-btn" onclick="copyTheme('${d.name}')">Copy theme name</button>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+renderGrid('fintech-grid', designs.fintech);
+renderGrid('editorial-grid', designs.editorial);
+renderGrid('ai-grid', designs.ai);
+</script>
+</body>
+</html>

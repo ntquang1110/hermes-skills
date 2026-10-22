@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Patent #[N]: [NUMBER] - [TITLE]</title>
+<style>:root{--yellow:#FFD600;--black:#0D0D0D;--bg:#1B1B1D;--card:#242428;--card2:#2A2A2F;--text:#FFFFFF;--muted:#8B8B8B;--green:#44C767;--red:#FF4B4B;--orange:#FF9100;--blue:#448AFF}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--black);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;line-height:1.7}
+.container{max-width:1100px;margin:0 auto;padding:20px 24px}
+.header{background:linear-gradient(135deg,#0D0D0D 0%,#1B1B1D 50%,#242428 100%);border-bottom:3px solid var(--yellow);padding:36px 24px;text-align:center}
+.header h1{font-size:1.8em;color:var(--yellow)}
+.header .sub{color:var(--muted);font-size:0.9em;margin-top:6px}
+.header .pat-num{display:inline-block;background:rgba(255,214,0,0.1);color:var(--yellow);padding:4px 18px;border-radius:999px;font-size:0.85em;margin-top:10px;font-family:monospace;border:1px solid rgba(255,214,0,0.2)}
+.header .badge-country{display:inline-block;background:rgba(255,255,255,0.06);color:var(--muted);padding:3px 14px;border-radius:999px;font-size:0.75em;margin-left:6px}
+.card{background:var(--card);border-radius:28px;padding:24px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.05)}
+.card h2{font-size:1.3em;color:var(--yellow);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.card p{color:#ddd;font-size:0.92em;margin-bottom:8px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+.stat-box{background:var(--card2);border-radius:14px;padding:16px;text-align:center}
+.stat-box .val{font-size:1.5em;font-weight:700;color:var(--yellow)}
+.stat-box .lbl{font-size:0.75em;color:var(--muted);margin-top:2px}
+.flow-step{background:var(--card2);border-radius:16px;padding:16px 18px;margin:12px 0;border-left:4px solid var(--yellow)}
+.flow-step .step-title{font-size:1em;font-weight:600;color:var(--yellow)}
+.flow-step .step-detail{margin-top:6px;font-size:0.9em;color:#ccc}
+.flow-step .step-cost{display:inline-block;background:rgba(255,145,0,0.1);color:var(--orange);padding:2px 12px;border-radius:12px;font-size:0.78em;margin-top:4px}
+.flow-step .step-easy{color:var(--green)}.flow-step .step-hard{color:var(--red)}
+.deep-box{background:rgba(68,138,255,0.04);border-radius:16px;padding:16px 18px;margin:10px 0;border-left:3px solid var(--blue)}
+.deep-box .dlbl{font-size:0.72em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+.ref-box{background:rgba(255,214,0,0.04);border-radius:14px;padding:14px 18px;margin:10px 0;border:1px solid rgba(255,214,0,0.08)}
+.arrow-flow{font-family:'Courier New',monospace;font-size:0.82em;white-space:pre;overflow-x:auto;background:var(--card2);border-radius:14px;padding:16px;margin:12px 0;border:1px solid #333}
+.arrow-flow .hl{color:var(--yellow)}.arrow-flow .blue{color:var(--blue)}.arrow-flow .green{color:var(--green)}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.comparison>div{background:var(--card2);border-radius:14px;padding:14px}
+.comparison .easy h4{color:var(--green)}.comparison .hard h4{color:var(--red)}
+.footer{text-align:center;padding:32px;color:var(--muted);font-size:0.8em;border-top:1px solid rgba(255,255,255,0.05);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>📜 Patent #[N]: [TITLE]</h1>
+<div class="sub">[ONE-LINE DESCRIPTION]</div>
+<div><span class="pat-num">[PATENT]</span><span class="badge-country">[COUNTRY] · [INVENTOR]</span></div>
+</div>
+<div class="container">
+
+<div class="card">
+<h2>🔭 I. TỔNG QUAN</h2>
+<div class="stats-grid">
+<div class="stat-box"><div class="val">[YEAR]</div><div class="lbl">Năm ưu tiên</div></div>
+<div class="stat-box"><div class="val">$[COST]</div><div class="lbl">/m³ đất</div></div>
+<div class="stat-box"><div class="val">[DAYS]</div><div class="lbl">Ngày xử lý</div></div>
+<div class="stat-box"><div class="val">[EFF]%</div><div class="lbl">[METAL] removal</div></div>
+</div>
+<p><strong>Mục tiêu:</strong> [GOAL]</p>
+<p><strong>Công nghệ cốt lõi:</strong> [TECH]</p>
+<div class="ref-box"><p><strong>🔗 Patent gốc:</strong> <a href="https://patents.google.com/patent/[PATENT]/en" style="color:var(--yellow)" target="_blank">link</a></p></div>
+<div class="comparison">
+<div class="easy"><h4>🟢 Dễ nhất</h4><p>[EASY]</p></div>
+<div class="hard"><h4>🔴 Khó nhất</h4><p>[HARD]</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2>📋 II. FLOW</h2>
+<div class="arrow-flow">
+<span class="hl">FLOW</span>
+<span class="blue">B1</span> A → <span class="blue">B2</span> B → <span class="blue">B3</span> C → <span class="green">B4</span> D → <span class="hl">B5</span> E
+</div>
+<!-- flow-step block for each step -->
+<div class="flow-step">
+<div class="step-title">📌 B1: [NAME]</div>
+<div class="step-detail"><strong>Làm gì:</strong> [DETAIL]</div>
+<div class="step-detail"><span class="step-easy">✅ Dễ:</span> [EASY]</div>
+<div class="step-detail"><span class="step-hard">⚠️ Khó:</span> [HARD]</div>
+<div class="step-cost">💰 $[COST]</div>
+</div>
+</div>
+
+<div class="card" style="border-color:rgba(68,138,255,0.15)">
+<h2 style="color:var(--blue)">🔬 III. DEEP DIVE</h2>
+<div class="deep-box"><div class="dlbl">[TOPIC]</div><p>[CONTENT]</p></div>
+</div>
+
+<div class="card">
+<h2>✅ CHECKLIST &amp; BUDGET</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+<div style="background:var(--card2);border-radius:12px;padding:12px;"><strong>📦 Vật tư:</strong><br>• [ITEM]</div>
+<div style="background:var(--card2);border-radius:12px;padding:12px;"><strong>✅ Cần chuẩn bị:</strong><br>• [ITEM]</div>
+</div>
+</div>
+
+<div class="footer"><strong>📜 Patent #[N]</strong> — [DESCRIPTION]</div>
+</div>
+</body>
+</html>
